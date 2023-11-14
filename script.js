@@ -33,5 +33,29 @@ document.getElementById('meuBotao').addEventListener('click', function(){
     }
 })
 
+var counter1 = document.getElementById('num1');
+var counter2 = document.getElementById('num2');
+var hasScrolled = false;
 
+function increment(i, max, element){
+    if(i > max) {
+      if(element === counter2) {
+        element.innerText += " Km";
+      }
+      return;
+    }
+    setTimeout(function(){
+      element.innerText = Math.round(i).toLocaleString('pt-BR');
+      increment(i+(max/100), max, element);
+    },10)
+  }
+
+
+window.addEventListener('scroll', function() {
+    if(!hasScrolled) {
+        increment(0,15000000000, counter1 );
+        increment(0,1600000000, counter2 );
+      hasScrolled = true;
+    }
+  });
 
