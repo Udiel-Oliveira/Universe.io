@@ -9,6 +9,7 @@ font-family: 'Rubik', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body
 {
@@ -231,6 +232,10 @@ cursor: pointer;
 /*Miscellaneous*/
     cursor: pointer;
 }
+#setina_a
+{
+    text-decoration: none;
+}
 .fa-solid
 {
     animation: Up-Down 5s linear infinite;
@@ -314,12 +319,33 @@ cursor: pointer;
 /*Manipulations stuff*/
     
 }
-#meuPlayer
+
+.info
 {
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    background-color: black;
+    padding: 20px;
 }
-
-
+.infos
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.parameters
+{
+    color: #494949;
+    font-family: 'Inter', sans-serif;
+}
+.num
+{
+    color: white;
+    font-size: 40px;
+    font-family: 'K2D', sans-serif;
+}
 
 /*ANIMATIONS*/
 @keyframes pulsar{
