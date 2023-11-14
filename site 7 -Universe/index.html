@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Universe</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Imagens/LogoWhite.png" id="icon" alt="LOGO_BRANCO">
+
+            <ul>
+                <a href="#" class="navigation"><li>Inicio</li></a>
+                <a href="#" class="navigation"><li>Sobre Nós</li></a>
+                <a href="#" class="navigation"><li>Constelações</li></a>
+                <a href="teste.html" class="navigation"><li>Planetas</li></a>
+                <button class="navigation">Log In</button>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="secao1">
+            <div class="parte1">
+            <h1 class="titulo animate__fadeIn">Universe Is Beautifull</h1>
+            <h3 id="frase">Já Olhou pro Céu Hoje?</h3>    
+            </div>
+
+            <div class="parte2">
+                <div class="buttons">
+
+                    <a href="#" id="planetas_btn">Planetas</a>
+    
+                    <a id="meuBotao" ><div class="pulsar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27" fill="black">
+                            <path d="M22.45 16.0115L5.2 25.9708C3.26666 27.087 0.85 25.6917 0.85 23.4593V3.5407C0.85 1.30828 3.26667 -0.0869761 5.2 1.02923L22.45 10.9885C24.3833 12.1047 24.3833 14.8953 22.45 16.0115Z"/>
+                          </svg>
+                    </div></a>
+    
+                    <a href="#" id="constelacao_btn">Constelações</a>
+    
+    
+                </div>
+                <div class="setinhas">
+                    <i class="fa-solid fa-computer-mouse fa-rotate-180"></i>
+                    <i class="fa-solid fa-chevron-down cetinha"></i>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class="secao2">
+            
+        </section>
+        <div id="modal" style="display: none;">
+            <span class="close" id="close" style="display: none;">X</span>
+            <div id="meuPlayer" controls=0 style="display: none;"></div>
+        </div>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+    <!--document.getElementById('meuBotao').addEventListener('click', function() {
+        var video = document.getElementById('meuVideo');
+        video.style.display = 'block';
+        video.play();
+        });-->
+
+    <div class="scripts">
+        <script src="script.js">
+
+
+
+    </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+    </div>
+</body>
+</html>
