@@ -13,6 +13,7 @@ font-family: 'Rubik', sans-serif;
 }
 body
 {
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -380,7 +381,7 @@ cursor: pointer;
 @keyframes aparecer {
     from{
         opacity: 0;
-        translate: -20vw 0;
+        translate: -50vw 0;
     }
     to{
         opacity: 1;
