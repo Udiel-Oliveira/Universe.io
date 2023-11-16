@@ -513,8 +513,7 @@ swiper-container {
     color: white;
     font-size: 40px;
     text-transform: uppercase;
-
-   
+    width: 115%;
 }
 .texto_slide
 {
