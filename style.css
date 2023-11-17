@@ -19,7 +19,9 @@ body
     background-size: cover;
     width: 100%;
     height: 100vh;
+    overflow-x: hidden;
 }
+
 nav
 {
 /*Display stuff*/
@@ -341,12 +343,19 @@ cursor: pointer;
     height: 30vh;
     background-color: black;
     padding: 20px;
+
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
 }
 .infos
 {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    align-items: center;
+    justify-content: center;
 }
 .parameters
 {
@@ -419,6 +428,7 @@ cursor: pointer;
     animation: aparecer 1ms ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 30%;
+
 }
 
 .features
@@ -589,34 +599,6 @@ swiper-container {
     background-size: 100%;
 }
 
-/*RESPONSIVIDADE*/
-
-
-@media (max-width: 500px)
-{
-    body{
-        overflow-x: hidden;
-    } 
-    .titulo
-    {
-        font-size: 3.5rem;
-    }
-    .parte1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .parte2
-    {
-        width: 100%;
-    }
-    #planetas_btn, #constelacao_btn
-    {
-        font-size: 10px;
-        width: 100%;
-    }
-}
 
 
 
@@ -667,4 +649,78 @@ swiper-container {
     }
 }
 
+
+/*RESPONSIVIDADE*/
+
+
+@media screen and (max-width: 500px)
+{
+body{
+
+    width: 100vw;
+} 
+.titulo
+{
+    font-size: 2rem;
+    letter-spacing: 25px;
+}
+#frase
+{
+    width: 100%;
+}
+.parte1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.parte2
+{
+    width: 100%;
+}
+#planetas_btn, #constelacao_btn
+{
+    font-size: 10px;
+    width: 100%;
+}
+.info{
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+.infos{
+    align-items: center;
+    justify-content: center;
+}
+.parameters
+{
+    font-size: 20px;
+}
+.num
+{
+    font-size: 25px;
+}
+#numero
+{
+    font-size: 80px;
+}
+.content_hist p
+{
+    width: 100%;
+    font-size: 16px;
+}
+.historia{
+    flex-direction: column;
+}
+.content_feat p
+{
+    font-size: 16px;
+    width: 100%;
+}
+.features
+{
+    flex-direction: column-reverse;
+}
+}
 
