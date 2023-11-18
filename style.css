@@ -343,19 +343,12 @@ cursor: pointer;
     height: 30vh;
     background-color: black;
     padding: 20px;
-
-    justify-content: center;
-    gap: 5px;
-    flex-direction: column;
 }
 .infos
 {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
-    align-items: center;
-    justify-content: center;
 }
 .parameters
 {
@@ -599,6 +592,25 @@ swiper-container {
     background-size: 100%;
 }
 
+/* Isso irá afetar qualquer barra de rolagem na página */
+::-webkit-scrollbar {
+    width: 02px;
+}
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* A barra de rolagem em si */
+::-webkit-scrollbar-thumb {
+    background: #20295e;
+    border-radius: 50px;
+}
+
+/* Cor da barra de rolagem quando você passa o mouse sobre ela */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(8, 19, 76);
+}
 
 
 
@@ -705,6 +717,10 @@ body{
 {
     font-size: 80px;
 }
+.content_hist
+{
+    padding: 0px;
+}
 .content_hist p
 {
     width: 100%;
@@ -712,6 +728,12 @@ body{
 }
 .historia{
     flex-direction: column;
+    padding: 16px;
+}
+.content_feat
+{
+    padding: 0px;
+    height: 75vh;
 }
 .content_feat p
 {
@@ -721,6 +743,7 @@ body{
 .features
 {
     flex-direction: column-reverse;
+    padding: 16px;
 }
 }
 
