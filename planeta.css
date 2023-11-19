@@ -1,0 +1,243 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    
+}
+body
+{
+    background-image: url(Imagens/as-belas-estrelas-brilhando-no-ceu-noturno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+nav
+{
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+/*Box model stuff*/
+    padding: 20px;
+}
+nav ul, .navigation
+{
+/*Display stuff*/
+    display: flex;
+/*Typography stuff*/
+    font-family: 'K2D', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+/*Miscellaneous*/
+    gap: 5rem;
+    list-style: none;
+}
+#icon
+{
+    width: 50px;
+}
+
+section, main
+{
+    height: 100vh;
+}
+
+swiper-container {
+    width: 90%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+  #planet
+  {
+    width: 50%;
+    height: 50%;
+  }
+
+
+  swiper-container {
+    width: 100%;
+    height: 10000000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+swiper-slide {
+    background-size: cover;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+.swiper_content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'K2D', sans-serif;
+    padding: 50px;
+}
+.titulo_slide
+{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 100px;
+}
+.frase_slide
+{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 5px;
+}
+
+.p_slide
+{
+    width: 40vw;
+    padding-top: 50px;
+    color: white;
+    padding-bottom: 40px;
+}
+.btn_slide button
+{
+    padding: 20px 50px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'K2D', sans-serif;
+    border: 2px solid white;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.8s ease;
+    border-radius: 50px;
+}
+.btn_slide button:hover
+{
+    background-color:#d2c214;
+    border: 2px solid #d2c214;
+    color: black;
+}
+
+
+.swiper_footer_content
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.titulo_swiper_footer
+{
+    color: white;
+    font-family: 'K2D', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 15px;
+}
+.frase_swiper_footer
+{
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'K2D', sans-serif;
+}
+
+  .mySwiper {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper2 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper2 swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    margin: 0px 5px;
+  }
+
+  .mySwiper2 .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  swiper-slide img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+#mercury:hover
+{
+    transition: all 0.5s ease-in-out;
+    background: url(Imagens/Mercurio.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+#venus:hover
+{
+    transition: all 0.5s ease-in-out;
+    background: url(Imagens/venus.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+#jupter:hover
+{
+    transition: all 0.5s ease-in-out;
+    background: url(Imagens/jupiter.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+#urano:hover
+{
+    transition: all 0.5s ease-in-out;
+    background: url(Imagens/Urano.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+}
+#netuno:hover
+{
+    transition: all 0.5s ease-in-out;
+    background: url(Imagens/netuno.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+}
