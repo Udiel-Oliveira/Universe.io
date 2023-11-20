@@ -59,3 +59,18 @@ window.addEventListener('scroll', function() {
     }
   });
 
+
+
+  function explorePlanet(planetId) {
+    // Oculta todos os conteúdos dos planetas
+    var planetContents = document.querySelectorAll('.planet-content');
+    var planetasContets = document.querySelectorAll('.planetas_content')
+    for (var i = 0; i < planetContents.length; i++) {
+      planetContents[i].classList.remove('active');
+    }
+
+    // Exibe o conteúdo do planeta específico
+    var selectedPlanet = document.getElementById(planetId);
+    selectedPlanet.classList.add('active');
+  }
+  

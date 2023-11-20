@@ -7,9 +7,10 @@
     text-decoration: none;
     
 }
+
 body
 {
-    background-image: url(Imagens/as-belas-estrelas-brilhando-no-ceu-noturno.jpg);
+    background-image: url(Imagens/fundo\ estrela.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -172,72 +173,78 @@ swiper-slide {
     font-family: 'K2D', sans-serif;
 }
 
-  .mySwiper {
+.mySwiper {
     height: 80%;
     width: 100%;
-  }
+}
 
-  .mySwiper2 {
+.mySwiper2 {
     height: 20%;
     box-sizing: border-box;
     padding: 10px 0;
-  }
+}
 
-  .mySwiper2 swiper-slide {
+.mySwiper2 swiper-slide {
     width: 25%;
     height: 100%;
     opacity: 0.4;
     margin: 0px 5px;
-  }
+}
 
-  .mySwiper2 .swiper-slide-thumb-active {
+.mySwiper2 .swiper-slide-thumb-active {
     opacity: 1;
-  }
+}
 
-  swiper-slide img {
+swiper-slide img {
     
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-#mercury:hover
+.planetas_content, .mercurio_div, .mercurio_secao2, .venus_div, .venus_secao2
 {
-    transition: all 0.5s ease-in-out;
-    background: url(Imagens/Mercurio.jpg);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: 'K2D', sans-serif;
+    background-color: black;
+    
 }
-#venus:hover
+.mercurio_div, .mercurio_secao2, .venus_div, .venus_secao2
 {
-    transition: all 0.5s ease-in-out;
-    background: url(Imagens/venus.jpg);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-#jupter:hover
+.btn_PLANETA
 {
-    transition: all 0.5s ease-in-out;
-    background: url(Imagens/jupiter.jpg);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-repeat: no-repeat;
+    padding: 20px 50px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'K2D', sans-serif;
+    border: 2px solid white;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.8s ease;
+    border-radius: 50px;
 }
-#urano:hover
+.btn_PLANETA:hover
 {
-    transition: all 0.5s ease-in-out;
-    background: url(Imagens/Urano.jpg);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-repeat: no-repeat;
+    background-color:#d2c214;
+    border: 2px solid #d2c214;
+    color: black;
 }
-#netuno:hover
+
+.planet-content 
 {
-    transition: all 0.5s ease-in-out;
-    background: url(Imagens/netuno.jpg);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-repeat: no-repeat;
+    display: none;
+}
+
+.active 
+{
+    display: block;
 }
