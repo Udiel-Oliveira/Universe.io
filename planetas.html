@@ -45,7 +45,7 @@
                   <spline-viewer url="https://prod.spline.design/bgOr7XTexuxQzgPq/scene.splinecode"></spline-viewer>
                   
                   <div class="swiper_content">
-                    <h1 class="titulo_slide" id="mercury">Mercurio</h1>
+                    <h1 class="titulo_slide" id="mercury">Mercúrio</h1>
                     <h3 class="frase_slide">Mensageiro veloz, conhecimento ardente</h3>
                     <p class="p_slide">
                       Mercúrio, o velocista cósmico mais próximo do Sol, é um mundo de extremos. Suas 
@@ -64,7 +64,7 @@
                   <spline-viewer url="https://prod.spline.design/GuL4uQw9l5xj1S4M/scene.splinecode"></spline-viewer>
 
                   <div class="swiper_content">
-                    <h1 class="titulo_slide" id="venus">Venus</h1>
+                    <h1 class="titulo_slide" id="venus">Vênus</h1>
                     <h3 class="frase_slide">Vênus, pérola misteriosa</h3>
                     <p class="p_slide">
                       Vênus, a pérola enevoada do sistema solar, é um espetáculo de contrastes. 
@@ -197,7 +197,7 @@
                   <spline-viewer url="https://prod.spline.design/VD-4iwtKr13UPmdd/scene.splinecode"></spline-viewer>
                   
                   <div class="swiper_footer_content">
-                    <h1 class="titulo_swiper_footer">Mercurio</h1>
+                    <h1 class="titulo_swiper_footer">Mercúrio</h1>
                     <h3 class="frase_swiper_footer">Mensageiro veloz, conhecimento ardente</h3>
                   </div>
                 </swiper-slide>
@@ -207,7 +207,7 @@
                   <spline-viewer url="https://prod.spline.design/eccXHlXMuS6gpG9w/scene.splinecode"></spline-viewer>
 
                   <div class="swiper_footer_content">
-                    <h1 class="titulo_swiper_footer">Venus</h1>
+                    <h1 class="titulo_swiper_footer">Vênus</h1>
                     <h3 class="frase_swiper_footer">Vênus, pérola misteriosa</h3>
                   </div>
                 </swiper-slide>
@@ -314,43 +314,13 @@
 
           </section>
         
-        
-
+  
+          
     </main>
 
     <div class="scripts">
       <script>
-        function explorePlanet(planetId) {
-      // Oculta todos os conteúdos dos planetas
-      var planetContents = document.querySelectorAll('.planet-content');
-      for (var i = 0; i < planetContents.length; i++) {
-        planetContents[i].classList.remove('active');
-        planetContents[i].classList.add('inactive');
-      }
 
-      // Exibe o conteúdo do planeta específico
-      var selectedPlanet = document.getElementById(planetId);
-      selectedPlanet.classList.remove('inactive');
-      selectedPlanet.classList.add('active');
-    }
-
-    // Adiciona um ouvinte de evento de rolagem para mostrar o slider ao rolar para cima
-    var planetContainer = document.getElementById('planetContainer');
-    var lastScrollTop = 0;
-
-    planetContainer.addEventListener('scroll', function() {
-      var st = planetContainer.scrollTop;
-
-      if (st > lastScrollTop) {
-        // Rolando para baixo, ocultar slider
-        planetContainer.style.overflowY = 'hidden';
-      } else {
-        // Rolando para cima, mostrar slider
-        planetContainer.style.overflowY = 'auto';
-      }
-
-      lastScrollTop = st;
-    });
       </script>
         <script src="script.js"></script>
 
