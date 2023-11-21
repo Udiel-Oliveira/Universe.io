@@ -25,7 +25,11 @@ nav
     align-items: center;
     justify-content:space-between;
 /*Box model stuff*/
-    padding: 20px;
+    padding: 5px 20px;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 1;
 }
 nav ul, .navigation
 {
