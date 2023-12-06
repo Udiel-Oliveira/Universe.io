@@ -698,9 +698,54 @@ swiper-container {
 }
 
 
-/*RESPONSIVIDADE*/
+/*RESPONSIVIDADE  1024, 600, 300*/
 
+@media(max-width: 1024px)
+{
+    body{
 
+        width: 100%;
+        overflow-x: hidden;
+    } 
+    .titulo
+    {
+        font-size: 6rem;
+        letter-spacing: 25px;
+    }
+    #frase
+    {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+    #planetas_btn, #constelacao_btn
+    {
+        width: 100%;
+        height: 4.5rem;
+        font-size: 2rem;
+    }
+    #play
+    {
+        height: 80px;
+        width: 80px;
+    }
+    .pulsar
+    {
+        width: 180px;
+        height: 180px;
+    }
+    .fa-computer-mouse, .fa-chevron-down
+    {
+        font-size: 40px;
+    }
+    .navigation
+    {
+        font-size: 20px;
+    }
+    #icon
+    {
+        width:150px;
+    }
+}
 @media (max-width: 500px)
 {
 body{
