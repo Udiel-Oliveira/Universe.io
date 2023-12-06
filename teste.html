@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="../pplayer/assets/pplayer.css" />
 
     <meta charset="UTF-8">
@@ -15,7 +16,6 @@
     <title>Universe</title>
 </head>
 <body>
-    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=K2D:wght@400;800&family=Rubik:wght@300;700&display=swap');
 /*
@@ -36,6 +36,98 @@ body
     background-size: cover;
     width: 100%;
     height: 100vh;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    font-family: 'K2D', sans-serif;
+}
+
+.swiper-button-prev{
+    width: 12rem;
+    height: auto;
+}
+
+.swiper-button-prev .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #ffffff;
+    border-radius: 1.625rem;
+}
+
+.swiper-button-prev .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(Imagens/Background\ -\ HomePage.jpg);
+}
+
+.swiper-button-prev .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.swiper-button-prev .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #000000;
+    border-right: 0.125rem solid #000000;
+    transform: rotate(45deg);
+}
+
+.swiper-button-prev .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.swiper-button-prev:hover .circle {
+    width: 100%;
+}
+
+.swiper-button-prev:hover .circle .icon.arrow {
+    background: #000000;
+    transform: translate(1rem, 0);
+}
+
+.swiper-button-prev:hover .button-text {
+    color: #000000;
 }
 nav
 {
@@ -76,98 +168,20 @@ section
 }
 
 
-button {
-    position: absolute;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 0;
-    font-size: inherit;
-    font-family: inherit;
-}
 
-button.learn-more {
-    width: 12rem;
-    height: auto;
+.swiper {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
-
-button.learn-more .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 3rem;
-    height: 3rem;
-    background: #ffffff;
-    border-radius: 1.625rem;
-}
-
-button.learn-more .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #ffffff;
-}
-
-button.learn-more .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-}
-
-button.learn-more .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #000000;
-    border-right: 0.125rem solid #000000;
-    transform: rotate(45deg);
-}
-
-button.learn-more .button-text {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: #ffffff;
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-button:hover .circle {
-    width: 100%;
-}
-
-button:hover .circle .icon.arrow {
-    background: #000000;
-    transform: translate(1rem, 0);
-}
-
-button:hover .button-text {
-    color: #000000;
-}
-
 
 
     </style>
-    <main>
+    <main id="mainContent" >
        
         <header>
             <nav>
@@ -187,12 +201,30 @@ button:hover .button-text {
 
         <section id="conteudo" >
         
-            <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                    <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Saiba Mais</span>
-            </button>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Saiba Mais</span>
+                </div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
 
         </section>
     </main>
@@ -200,77 +232,36 @@ button:hover .button-text {
     <footer>
 
     </footer>
-    <!--document.getElementById('meuBotao').addEventListener('click', function() {
-        var video = document.getElementById('meuVideo');
-        video.style.display = 'block';
-        video.play();
-        });-->
-
-        <!--var modal = document.getElementById("myModal");
-var btn = document.getElementById("meuBotao");
-var span = document.getElementsByClassName("close")[0];
-var video = document.getElementById("meuVideo");
-
-btn.onclick = function() {
-  modal.style.display = "block";
-  video.src = "https://www.youtube.com/embed/jdYJf_ybyVo";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-  video.src = "";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    video.src = "";
-  }
-}-->
 
     <div class="scripts">
-        <script>
-            var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+          
+            const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
 
-var player;
-function onYouTubeIframeAPIReady() {
-player = new YT.Player('meuPlayer', {
-    height: '390',
-    width: '640',
-    videoId: 'jdYJf_ybyVo', // Altere o ID do vídeo aqui
-});
-}
-   document.getElementById('meuBotao').addEventListener('click', function() {
-var video = document.getElementById('meuPlayer');
-var closes = document.getElementById('close');
-var modals = document.getElementById('modal');
-modals.style.display = 'block'
-closes.style.display = 'block';
-video.style.display = 'block';
-player.playVideo();
-});
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
 
-document.getElementById('meuBotao').addEventListener('click', function(){
-    var closes = document.getElementById('close');
-    var video = document.getElementById('meuPlayer');
-    var modals = document.getElementById('modal');
-    closes.onclick = function() {
-    modals.style.display = 'none'
-    video.style.display = "none";
-    closes.style.display = "none";
-    player.stopVideo();
-    }
-})
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.learn-more',
+            },
 
-
-
-
-        </script>
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
+          </script>
 
             <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
             <script type="text/javascript" src="../pplayer/js/jquery.pplayer.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
